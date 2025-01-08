@@ -1,0 +1,258 @@
+/* General Container Styling */
+.donation-container {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.image-section {
+  position: relative;
+}
+
+.image-section img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Overlay Text Styling */
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 18px;
+  /* background-color: rgba(0, 0, 0, 0.6);*/ /* Slight background for readability */
+  /* padding: 10px; */
+  border-radius: 5px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.overlay-text .text-danger {
+  color: #ff4081 !important; /* Highlighted pink text */
+}
+
+/* Form Section */
+.form-section {
+  padding: 20px;
+}
+
+/* Label Styling */
+.form-section label {
+  display: block; /* Ensures labels appear on their own line */
+  margin-bottom: 5px; /* Adds spacing between label and input field */
+  font-weight: bold; /* Makes labels bold for better visibility */
+}
+
+/* Input Fields */
+.form-section input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Proceed Button */
+.proceed-button {
+  width: 70%; /* Larger width for the proceed button */
+  height: 50px; /* Uniform height */
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0;
+}
+
+.proceed-button:hover {
+  background-color: #e73370;
+}
+
+/* Discard Button */
+.discard-button {
+  width: 25%; /* Smaller width for the discard button */
+  height: 50px; /* Uniform height */
+  background-color: #d3d3d3; /* Gray color for discard */
+  color: black;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0;
+}
+
+.discard-button:hover {
+  background-color: #bfbfbf;
+}
+
+/* Button Alignment */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px; /* Add spacing between buttons */
+}
+
+
+/* General Styling */
+.causes-container h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.causes-container .text-center span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.causes-container .btn-pink {
+  background-color: #ff4081;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.causes-container .btn-pink:hover {
+  background-color: #e73370;
+}
+
+.causes-container img {
+  object-fit: cover;
+}
+
+.causes-container h6 {
+  font-size: 1rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.causes-container p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Ensure child image and content align properly */
+.causes-container .row .col-6.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/* Custom CSS for Program Impacts */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-title .highlight {
+  color: #ff4081; /* Pink highlight */
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #ff4081;
+  border: none;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #e6396f;
+  color: white;
+}
+
+
+/* Custom CSS for Testimonials Section */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #333;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  opacity: 0.7;
+}
+
+.carousel-indicator.active {
+  background-color: #ff4081;
+  opacity: 1;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-inner {
+  align-items: center;
+}
+
+.img-fluid {
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .testimonial-text {
+      font-size: 1rem;
+  }
+
+  .testimonial-author {
+      font-size: 0.9rem;
+  }
+}
