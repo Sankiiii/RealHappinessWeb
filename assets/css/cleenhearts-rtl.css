@@ -8328,6 +8328,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .main-slider-one {
   position: relative;
   background-color: var(--cleenhearts-white, #fff);
+  margin-top: 20px; /* Adjust the value as needed */
 }
 .main-slider-one__wrapper {
   position: relative;
@@ -8335,6 +8336,8 @@ body.megamenu-popup-active .mobile-nav__content {
   overflow: hidden;
   border-radius: 20px;
 }
+
+
 @media (max-width: 1599px) {
   .main-slider-one__wrapper {
     margin: 0 15px;
