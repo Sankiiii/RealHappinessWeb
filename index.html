@@ -168,22 +168,22 @@
                             <ul class="main-menu__list">
 
 
-                                <li class="megamenu megamenu-clickable megamenu-clickable--toggler">
+                                <li class="megamenu megamenu-clickable ">
                                     <a href="index.html">Home</a>
                                 </li>
 
 
                                 <li class="dropdown">
-                                    <a href="about.html" class="AbUS">About Us <svg xmlns="http://www.w3.org/2000/svg"
+                                    <a href="#" class="AbUS">About Us <svg xmlns="http://www.w3.org/2000/svg"
                                             width="16" height="16" fill="currentColor" class="caretbibi-caret-down-fill"
                                             viewBox="0 0 16 16">
                                             <path
                                                 d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
                                         </svg></a>
                                     <ul>
-                                        <li><a href="about.html">Who Are We</a></li>
-                                        <li><a href="./MainPages/OurTeam.html">Our Team</a></li>
-                                        <li><a href="./MainPages/OurLegal.html">Our Legal</a></li>
+                                        <li><a href="WhoareWe.html">Who Are We</a></li>
+                                        <li><a href="OurTeam.html">Our Team</a></li>
+                                        <li><a href="OurLegal.html">Our Legal</a></li>
                                         <li><a href="./MainPages/OurPartners.html">Our Partners</a></li>
                                     </ul>
                                 </li>
@@ -270,14 +270,19 @@
                                     <path fill-rule="evenodd"
                                         d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                                 </svg></span>
-                            <span className="text-black font-bold text-lg max-md:text-base"
-                                style="font-weight: 700;">DONATE</span>
+                            <!-- <span className="text-black font-bold text-lg max-md:text-base"
+                                style="font-weight: 700;">DONATE</span> -->
+
+                                <span className="text-black font-bold text-lg max-md:text-base max-md:ml-[-10px]"
+      style="font-weight: 700;">DONATE</span>
+
                         </button>
-                        <div class="mobile-nav__btn mobile-nav__toggler">
+                        <div class="mobile-nav__btn mobile-nav__toggler" style="margin-left: auto; margin-right: 20px;">
                             <span></span>
                             <span></span>
                             <span></span>
-                        </div><!-- /.mobile-nav__toggler -->
+                        </div>
+                        <!-- /.mobile-nav__toggler -->
                         <!--<a href="donate.html" class="cleenhearts-btn main-header__btn">
                             <div class="cleenhearts-btn__icon-box">
                                 <div class="cleenhearts-btn__icon-box__inner"><span class="icon-donate"></span></div>
@@ -476,8 +481,7 @@
                         <div class="about-one__content">
                             <div class="sec-title">
 
-                                <h6 class="sec-title__tagline @@extraClassName">About Real Happiness Of Life Foundation
-                                </h6>
+                                <h6 class="sec-title__tagline @@extraClassName">ABOUT CLEAN HEART</h6>
                                 <!-- /.sec-title__tagline -->
 
                                 <h3 class="sec-title__title">Helping Each Other can Make World <span
@@ -652,9 +656,8 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;">
-                            <div class="donation-card__bg"
-                                style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
-                            </div><!-- /.donation-card__bg -->
+                            <div class="donation-card__bg">
+                            </div><!-- /.donation-card__bg --> 
                             <a href="donation-details-right.html" class="donation-card__image">
                                 <img src="assets/images/donations/childmedical.jpg"
                                     alt="Give Children's Good medical support" style="width: 100%;
@@ -708,12 +711,12 @@
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                           color: #757575;">
-                                            Raised $<span>80,050</span>
+                                            Raised ₹<span>80,050</span>
                                         </h5>
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                           color: #757575;">
-                                            Goal $<span>90,000</span>
+                                            Goal ₹<span>90,000</span>
                                         </h5>
                                     </div><!-- /.donation-card__progress__bottom -->
                                 </div><!-- /.donation-card__progress -->
@@ -722,23 +725,15 @@
                             </div><!-- /.donation-card__content -->
                             <div class="actions"
                                 style="display: flex; justify-content: space-between; margin-top: 10px;">
-                                <a href="donation-details-right.html" class="donation-card__image">
-                                    <button id="share-button31"
-                                        style="padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; background-color: white; color: rgb(113, 172, 211); border: 2px solid rgb(113, 172, 211);"><a
-                                            href="donation-details-right.html"
-                                            style="color: inherit; text-decoration: none;">
-                                            Share
-                                        </a>
-                                    </button>
-                                </a>
-                                <a href="donation-details-right.html" class="donation-card__image">
+                               <!-- button share  -->
+                                <!-- <a href="donation-details-right.html" class="donation-card__image">
                                     <button id="donate-button31"
                                         style="padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; background-color: #ff007f; color: #fff;"><a
                                             href="donation-details-right.html"
                                             style="color: inherit; text-decoration: none;">
                                             Donate Now</a>
                                     </button>
-                                </a>
+                                </a> -->
                             </div><!-- /.actions -->
                         </div><!-- /.donation-card -->
                     </div><!-- /.item -->
@@ -751,8 +746,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;">
-                            <div class="donation-card__bg"
-                                style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                            <div class="donation-card__bg">
                             </div><!-- /.donation-card__bg -->
                             <a href="donation-details-right.html" class="donation-card__image">
                                 <img src="assets/images/donations/education.png"
@@ -796,11 +790,11 @@
                                     <div class="donation-card__progress__bottom">
                                         <h5 class="donation-card__progress__title" style="font-size: 14px;
                                                                                           color: #757575;">
-                                            Raised $<span>80,050</span>
+                                            Raised ₹<span>80,050</span>
                                         </h5>
                                         <h5 class="donation-card__progress__title" style="font-size: 14px;
                                                                                           color: #757575;">
-                                            Goal $<span>90,000</span>
+                                            Goal ₹<span>90,000</span>
                                         </h5>
                                     </div><!-- /.donation-card__progress__bottom -->
                                 </div><!-- /.donation-card__progress -->
@@ -808,26 +802,20 @@
 
                             </div><!-- /.donation-card__content -->
 
-                            <div class="actions" style="display: flex;
-    justify-content: space-between;
-    margin-top: 10px;">
+                            <div class="actions" style="display: flex; justify-content: space-between; margin-top: 10px;">
                                 <a href="donation-details-right.html" style="color: inherit; text-decoration: none;">
-                                    <button id="share-button31" style="padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;background-color: white;
-    color: rgb(113, 172, 211);
-    border: 2px solid rgb(113, 172, 211);">Share</button>
+                                    <button id="donate-button31" style="padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; background-color: #ff007f; color: #fff;">
+                                        Donate Now
+                                    </button>
                                 </a>
-                                <a href="donation-details-right.html" style="color: inherit; text-decoration: none;">
-                                    <button id="donate-button31" style="padding: 8px 12px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;background-color: #ff007f;
-    color: #fff;">Donate
-                                        Now</button>
+                                
+                                <a href="share-details.html" style="color: inherit; text-decoration: none;">
+                                    <button id="share-button" style="padding: 8px 12px; border: none; border-radius: 4px; cursor: pointer; background-color: #ff007f; color: #fff;">
+                                        Share
+                                    </button>
                                 </a>
                             </div>
+                            
 
                         </div><!-- /.donation-card -->
                     </div><!-- /.item -->
@@ -840,8 +828,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;">
-                            <div class="donation-card__bg"
-                                style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                            <div class="donation-card__bg">
                             </div><!-- /.donation-card__bg -->
                             <a href="donation-details-right.html" class="donation-card__image">
                                 <img src="assets/images/donations/food.jpg" alt="Raise Funds For Clean & Healthy Food"
@@ -887,12 +874,12 @@
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                                                           color: #757575;">
-                                            Raised $<span>80,050</span>
+                                            Raised ₹<span>80,050</span>
                                         </h5>
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                                                           color: #757575;">
-                                            Goal $<span>90,000</span>
+                                            Goal ₹<span>90,000</span>
                                         </h5>
                                     </div><!-- /.donation-card__progress__bottom -->
                                 </div><!-- /.donation-card__progress -->
@@ -901,23 +888,15 @@
                             <div class="actions" style="display: flex;
                                 justify-content: space-between;
                                 margin-top: 10px;">
-                                <a href="donation-details-right.html" class="donation-card__image">
-                                    <button id="share-button31" style="padding: 8px 12px;
-                                border: none;
-                                border-radius: 4px;
-                                cursor: pointer;background-color: white;
-                                color: rgb(113, 172, 211);
-                                border: 2px solid rgb(113, 172, 211);"><a href="donation-details-right.html"
-                                            style="color: inherit; text-decoration: none;">Share</a></button>
-                                </a>
-                                <a href="donation-details-right.html" class="donation-card__image">
+                                <!-- share button -->
+                                <!-- <a href="donation-details-right.html" class="donation-card__image">
                                     <button id="donate-button31" style="padding: 8px 12px;
                                 border: none;
                                 border-radius: 4px;
                                 cursor: pointer;background-color: #ff007f;
                                 color: #fff;"><a href="donation-details-right.html"
                                             style="color: inherit; text-decoration: none;">Donate Now</a></button>
-                                </a>
+                                </a> -->
 
                             </div>
                         </div><!-- /.donation-card -->
@@ -930,8 +909,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;">
-                            <div class="donation-card__bg"
-                                style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                            <div class="donation-card__bg">
                             </div><!-- /.donation-card__bg -->
                             <a href="donation-details-right.html" class="donation-card__image">
                                 <img src="assets/images/donations/seniorcitizen.jpg" alt="help Senior citizens" style="width: 100%;
@@ -976,12 +954,12 @@
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                           color: #757575;">
-                                            Raised $<span>80,050</span>
+                                            Raised ₹<span>80,050</span>
                                         </h5>
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                           color: #757575;">
-                                            Goal $<span>90,000</span>
+                                            Goal ₹<span>90,000</span>
                                         </h5>
                                     </div><!-- /.donation-card__progress__bottom -->
                                 </div><!-- /.donation-card__progress -->
@@ -991,23 +969,15 @@
                             <div class="actions" style="display: flex;
                                 justify-content: space-between;
                                 margin-top: 10px;">
-                                <a href="donation-details-right.html" class="donation-card__image">
-                                    <button id="share-button31" style="padding: 8px 12px;
-                                border: none;
-                                border-radius: 4px;
-                                cursor: pointer;background-color: white;
-                                color: rgb(113, 172, 211);
-                                border: 2px solid rgb(113, 172, 211);"><a href="donation-details-right.html"
-                                            style="color: inherit; text-decoration: none;">Share</a></button>
-                                </a>
-                                <a href="donation-details-right.html" class="donation-card__image">
+                               <!-- share button was here -->
+                                <!-- <a href="donation-details-right.html" class="donation-card__image">
                                     <button id="donate-button31" style="padding: 8px 12px;
                                 border: none;
                                 border-radius: 4px;
                                 cursor: pointer;background-color: #ff007f;
                                 color: #fff;"><a href="donation-details-right.html"
                                             style="color: inherit; text-decoration: none;">Donate Now</a></button>
-                                </a>
+                                </a> -->
                             </div>
 
                         </div><!-- /.donation-card -->
@@ -1020,8 +990,7 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     transition: transform 0.3s, box-shadow 0.3s;">
-                            <div class="donation-card__bg"
-                                style="background-image: url('assets/images/backgrounds/donation-bg-1-1.png');">
+                            <div class="donation-card__bg">
                             </div><!-- /.donation-card__bg -->
                             <a href="donation-details-right.html" class="donation-card__image">
                                 <img src="assets/images/donations/senior citizen 2.jpg" alt="support senior citizens"
@@ -1068,12 +1037,12 @@
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                                                           color: #757575;">
-                                            Raised $<span>80,050</span>
+                                            Raised ₹<span>80,050</span>
                                         </h5>
                                         <h5 class="donation-card__progress__title"
                                             style="font-size: 14px;
                                                                                                                                                           color: #757575;">
-                                            Goal $<span>90,000</span>
+                                            Goal ₹<span>90,000</span>
                                         </h5>
                                     </div><!-- /.donation-card__progress__bottom -->
                                 </div><!-- /.donation-card__progress -->
@@ -1082,23 +1051,15 @@
                             <div class="actions" style="display: flex;
                                 justify-content: space-between;
                                 margin-top: 10px;">
-                                <a href="donation-details-right.html" class="donation-card__image">
-                                    <button id="share-button31" style="padding: 8px 12px;
-                                border: none;
-                                border-radius: 4px;
-                                cursor: pointer;background-color: white;
-                                color: rgb(113, 172, 211);
-                                border: 2px solid rgb(113, 172, 211);"><a href="donation-details-right.html"
-                                            style="color: inherit; text-decoration: none;"></a>Share</button>
-                                </a>
-                                <a href="donation-details-right.html" class="donation-card__image">
+                                <!-- share button was here -->
+                                <!-- <a href="donation-details-right.html" class="donation-card__image">
                                     <button id="donate-button31" style="padding: 8px 12px;
                                 border: none;
                                 border-radius: 4px;
                                 cursor: pointer;background-color: #ff007f;
                                 color: #fff;"><a href="donation-details-right.html"
                                             style="color: inherit; text-decoration: none;"></a>Donate Now</button>
-                                </a>
+                                </a> -->
                             </div>
 
                         </div><!-- /.donation-card -->
@@ -1144,11 +1105,7 @@
                     <div class="col-xl-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
                         <div class="gift-card">
                             <div class="gift-card__bg"
-
-                                style='background-image: url(assets/images/updatedimages/IMG-20250104-WA0009.jpg)'>
-                            </div>
-
-                               
+                                style='background-image: url(assets/images/updatedimages/IMG-20250104-WA0009.jpg)'></div>
                             <!-- /.gift-card__bg -->
                             <div class="gift-card__content">
                                 <h3 class="gift-card__title">Make a donate now</h3><!-- /.gift-card__title -->
@@ -1195,10 +1152,7 @@
                     <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
                         <div class="support-card">
                             <a href="donate.html" class="support-card__image">
-                                <img src="assets/images/updatedimages/IMG-20250104-WA0014.jpg" alt="Foods Support">
-
                                 <img src="assets/images/support/support-1-1.jpg" alt="Foods Support">
-
                             </a><!-- /.support-card__image -->
                             <a href="donate.html" class="support-card__content">
                                 <div class="support-card__content__inner">
@@ -1212,11 +1166,7 @@
                     <div class="col-xl-6 col-lg-6 wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="200ms">
                         <div class="support-card">
                             <a href="donate.html" class="support-card__image">
-
-                                <img src="assets/images/updatedimages/IMG-20250104-WA0010.jpg" alt="Sports Support">
-
                                 <img src="assets/images/support/support-1-2.jpg" alt="Sports Support">
-
                             </a><!-- /.support-card__image -->
                             <a href="donate.html" class="support-card__content">
                                 <div class="support-card__content__inner">
@@ -1237,7 +1187,6 @@
                                 </div><!-- /.support-card__content__inner -->
                             </a><!-- /.support-card__content -->
                             <a href="donate.html" class="support-card__image">
-                                <img src="assets/images/updatedimages/babycry.jpg" alt="Medical Support">
                                 <img src="assets/images/support/support-1-3.jpg" alt="Medical Support">
                             </a><!-- /.support-card__image -->
                         </div><!-- /.support-card -->
@@ -1252,7 +1201,6 @@
                                 </div><!-- /.support-card__content__inner -->
                             </a><!-- /.support-card__content -->
                             <a href="donate.html" class="support-card__image">
-                                <img src="assets/images/updatedimages/IMG-20250104-WA0013.jpg" alt="Education Support">
                                 <img src="assets/images/support/support-1-4.jpg" alt="Education Support">
                             </a><!-- /.support-card__image -->
                         </div><!-- /.support-card -->
@@ -1270,60 +1218,65 @@
         <!-- --------------------------------------------------------------------------------------------- -->
         <section class="events-one section-space">
             <!-- <div class="container"> -->
-            <div class="sec-title">
+                <div class="sec-title">
 
-                <h6 class="sec-title__tagline sec-title__tagline--center">Worldwide non profit charity</h6>
-                <!-- /.sec-title__tagline -->
+                    <h6 class="sec-title__tagline sec-title__tagline--center">Worldwide non profit charity</h6>
+                    <!-- /.sec-title__tagline -->
 
-                <h3 class="sec-title__title">Our <span class="sec-title__title__inner">Impacts</span></h3>
-                <!-- /.sec-title__title -->
-            </div><!-- /.sec-title -->
+                    <h3 class="sec-title__title">Our <span class="sec-title__title__inner">Impacts</span></h3>
+                    <!-- /.sec-title__title -->
+                </div><!-- /.sec-title -->
             <!-- </div>/.container -->
-
+            
             <div class="card-container">
                 <div class="card">
-                    <img src="assets/images/inspiring/child welfare.jpg" alt="Child Welfare Program Image">
-                    <div class="card-content">
-                        <p>Our</p>
-                        <h5>Child Welfare programs</h5>
-                        <p>aim to improve access to education and essential
-                            services for children. We provide meals, school supplies, and support to help
-                            children thrive in their communities.</p>
-                        <button>Donate Now</button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/inspiring/inspiring-1-1.jpg" alt="Education Program Image">
-                    <div class="card-content">
-                        <p>Our</p>
-                        <h5>Mission Education Program</h5>
-                        <p>to reintegrate dropout children into
-                            mainstream education, providing them with resources, counselling, and support
-                            to ensure they thrive academically and develop positive habits.</p>
-                        <button>Donate Now</button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="assets/images/inspiring/inspiring-1-2.jpg" alt="Rescue and Rehabilitation Program Image">
-                    <div class="card-content">
-                        <p>We focus on</p>
-                        <h5 class="inline-text">Rescuing</h5>
-                        <p class="inline-text">and</p>
-                        <h5 class="inline-text">Rehabilitating</h5>
-                        <p>individuals and animals in need,
-                            ensuring their safety and well-being. Our programs provide essential care
-                            and resources for both people and animals.</p>
-                        <button>Donate Now</button>
-                    </div>
-
-
-                    <div class="view-more-button"></div>
-                    <a href="#" class="view-more-button"> View More ></a>
+                <img src="assets/images/inspiring/child welfare.jpg" alt="Child Welfare Program Image">
+                <div class="card-content">
+                    <p>Our</p>
+                    <h5>Child Welfare programs</h5>
+                    <p>aim to improve access to education and essential
+                        services for children. We provide meals, school supplies, and support to help
+                        children thrive in their communities.</p>
+                    <button>Donate Now</button>
                 </div>
             </div>
-        </section><!-- /.events-one section-space -->
+            <div class="card">
+                <img src="assets/images/inspiring/inspiring-1-1.jpg" alt="Education Program Image">
+                <div class="card-content">
+                    <p>Our</p>
+                    <h5>Mission Education Program</h5>
+                    <p>to reintegrate dropout children into
+                        mainstream education, providing them with resources, counselling, and support
+                        to ensure they thrive academically and develop positive habits.</p>
+                    <button>Donate Now</button>
+                </div>
+            </div>
 
+            <div class="card">
+                <img src="assets/images/inspiring/inspiring-1-2.jpg" alt="Rescue and Rehabilitation Program Image">
+                <div class="card-content">
+                    <p>We focus on</p>
+                    <h5 class="inline-text">Rescuing</h5>
+                    <p class="inline-text">and</p>
+                    <h5 class="inline-text">Rehabilitating</h5>
+                    <p>individuals and animals in need,
+                        ensuring their safety and well-being. Our programs provide essential care
+                        and resources for both people and animals.</p>
+                    <button>Donate Now</button>
+                </div>
+
+
+                <div class="view-more-button"></div>
+                <a href="#" class="view-more-button"> View More ></a>
+            </div>
+        </div>
+
+
+        <!-- --------------------------------------------------------------------------------------------- -->
+
+
+
+        
         <section class="testimonials-one section-space">
             <div class="testimonials-one__bg cleenhearts-jarallax" data-jarallax data-speed="0.3"
                 data-imgPosition="50% -100%"
@@ -1339,9 +1292,8 @@
                                     <h6 class="sec-title__tagline @@extraClassName">TESTIMONIALS</h6>
                                     <!-- /.sec-title__tagline -->
 
-                                    <h3 class="sec-title__title">What They’re Talking About Real Happiness of <span
-                                            class="sec-title__title__inner">Life Foundation</span></h3>
-                                    <!-- /.sec-title__title -->
+                                    <h3 class="sec-title__title">What They’re Talking About Clean <span
+                                            class="sec-title__title__inner">Heart</span></h3><!-- /.sec-title__title -->
                                 </div><!-- /.sec-title -->
                             </div><!-- /.col-lg-7 -->
                             <div class="col-lg-5 wow fadeInRight" data-wow-duration="1500ms">
@@ -1480,9 +1432,9 @@
             </div><!-- /.testimonials-one__shape -->
         </section><!-- /.testimonials-one section-space -->
 
+        
 
-
-        <section class="help-people" style="background-image: url('assets/images/backgrounds/help-people-bg-1.png');">
+        <section class="help-people" style="background-image: url('assets/images/backgrounds/help-people-bg-1.png');margin-top: 20px;">
             <div class="container">
                 <div class="row">
                     <div class="help-people__images col-xl-6">
@@ -1550,9 +1502,8 @@
                             <h6 class="sec-title__tagline @@extraClassName">Our latest news</h6>
                             <!-- /.sec-title__tagline -->
 
-                            <h3 class="sec-title__title">Latest News & Articles From Real Happiness Of <span
-                                    class="sec-title__title__inner">Life Foundation</span></h3>
-                            <!-- /.sec-title__title -->
+                            <h3 class="sec-title__title">Latest News & Article <span
+                                    class="sec-title__title__inner">Article</span></h3><!-- /.sec-title__title -->
                         </div><!-- /.sec-title -->
                     </div><!-- /.col-xl-6 col-lg-7 col-md-9 -->
                 </div><!-- /.row -->
@@ -1781,7 +1732,7 @@
                     <h6 class="sec-title__tagline sec-title__tagline--center">OUR DONARS</h6>
                     <!-- /.sec-title__tagline -->
 
-                    <h3 class="sec-title__title">Top <span class='sec-title__title__inner'>Donor</span> Countries</h3>
+                    <h3 class="sec-title__title">Our Top <span class='sec-title__title__inner'>Donor</span></h3>
                     <!-- /.sec-title__title -->
                 </div><!-- /.sec-title -->
                 <div class="donars-one__row donars-one__row--top">
@@ -2202,9 +2153,10 @@
                 <!-- /.main-footer__bottom-bg -->
                 <div class="container">
                     <div class="main-footer__bottom__inner">
-                        <p class="main-footer__copyright" style="color:black;">
-                            &copy; Copyright <span class="dynamic-year"></span> Real Happiness Of Life Foundation.
-                        </p>
+                        <p class="main-footer__copyright" style="color: black;">
+    &copy; Copyright <span class="dynamic-year"></span> Real Happiness Of Life Foundation.
+</p>
+
                     </div><!-- /.main-footer__inner -->
                 </div><!-- /.container -->
             </div><!-- /.main-footer__bottom -->
@@ -2308,7 +2260,8 @@
     <!-- /.search-popup -->
 
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top">
-        <span class="scroll-to-top__text">back top</span>
+        <span class="scroll-to-top__text" style="color: black;">back top</span>
+
         <span class="scroll-to-top__wrapper"><span class="scroll-to-top__inner"></span></span>
     </a>
 
