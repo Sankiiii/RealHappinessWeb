@@ -3,67 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundraising Cards</title>
+    <title>Responsive Fundraising Cards</title>
 </head>
-<body>
-    <div style="display: flex; gap: 20px; justify-content: center; align-items: center; min-height: 100vh; position: relative;">
-        <button style="width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white;">&#8249;</button>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #e91e63;">
+    <div style="position: relative; width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+        <button style="position: absolute; top: 50%; transform: translateY(-50%); left: 10px; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; z-index: 10;" class="prev">&#8249;</button>
         
-        <!-- Medical Card -->
-        <div style="background: white; border-radius: 10px; padding: 20px; width: 350px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            <span style="display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 14px; margin-bottom: 15px; background-color: #ff9800; color: white;">Medical</span>
-            <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-                <img src="before-image.jpg" alt="Before" style="width: 48%; border-radius: 8px;">
-                <img src="after-image.jpg" alt="After" style="width: 48%; border-radius: 8px;">
+        <div style="width: 90%; max-width: 1200px; position: relative; overflow: hidden;">
+            <div id="carousel-track" style="display: flex; gap: 20px; transition: transform 0.5s ease-in-out; width: fit-content;">
+                <!-- Cards will be inserted here by JavaScript -->
             </div>
-            <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #333;">Give Children's Good Medical Support</h2>
-            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">By Krishna Prasad</p>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px; color: #666;">
-                <span>Raised ₹80,050</span>
-                <span>Goal ₹90,000</span>
-            </div>
-            <div style="display: flex; gap: 10px;">
-                <button style="padding: 10px 20px; border: 1px solid #2196f3; color: #2196f3; background: white; border-radius: 5px; cursor: pointer;">Share</button>
-                <button style="padding: 10px 20px; background: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer;">Donate Now</button>
-            </div>
-            <div style="font-size: 14px; color: #666; margin-top: 15px;">www.rhif.org</div>
         </div>
 
-        <!-- Education Card -->
-        <div style="background: white; border-radius: 10px; padding: 20px; width: 350px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            <span style="display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 14px; margin-bottom: 15px; background-color: #2196f3; color: white;">Education</span>
-            <img src="education-image.jpg" alt="Education" style="width: 100%; margin-bottom: 15px; border-radius: 8px;">
-            <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #333;">Let's Education For Children Get Good Life</h2>
-            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">By Krishna Prasad</p>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px; color: #666;">
-                <span>Raised ₹80,050</span>
-                <span>Goal ₹90,000</span>
-            </div>
-            <div style="display: flex; gap: 10px;">
-                <button style="padding: 10px 20px; border: 1px solid #2196f3; color: #2196f3; background: white; border-radius: 5px; cursor: pointer;">Share</button>
-                <button style="padding: 10px 20px; background: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer;">Donate Now</button>
-            </div>
-            <div style="font-size: 14px; color: #666; margin-top: 15px;">www.rhif.org</div>
-        </div>
-
-        <!-- Foods Card -->
-        <div style="background: white; border-radius: 10px; padding: 20px; width: 350px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-            <span style="display: inline-block; padding: 5px 10px; border-radius: 20px; font-size: 14px; margin-bottom: 15px; background-color: #4caf50; color: white;">Foods</span>
-            <img src="./assets/images/close.png" alt="Food" style="width: 100%; margin-bottom: 15px; border-radius: 8px;">
-            <h2 style="font-size: 20px; font-weight: bold; margin-bottom: 15px; color: #333;">Raise Funds For Clean And Healthy Food</h2>
-            <p style="font-size: 14px; color: #666; margin-bottom: 15px;">By Krishna Prasad</p>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px; color: #666;">
-                <span>Raised ₹80,050</span>
-                <span>Goal ₹90,000</span>
-            </div>
-            <div style="display: flex; gap: 10px;">
-                <button style="padding: 10px 20px; border: 1px solid #2196f3; color: #2196f3; background: white; border-radius: 5px; cursor: pointer;">Share</button>
-                <button style="padding: 10px 20px; background: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer;">Donate Now</button>
-            </div>
-            <div style="font-size: 14px; color: #666; margin-top: 15px;">www.rhif.org</div>
-        </div>
-
-        <button style="width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white;">&#8250;</button>
+        <button style="position: absolute; top: 50%; transform: translateY(-50%); right: 10px; width: 40px; height: 40px; border-radius: 50%; background-color: rgba(255, 255, 255, 0.3); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; z-index: 10;" class="next">&#8250;</button>
     </div>
+
+    <script>
+        const cardsData = [
+            {
+                image: "assets/images/donations/seniorcitizen.jpg",
+                title: "Raise Funds For Clean And Healthy Food",
+                author: "By Krishna Prasad",
+                raised: "₹80,050",
+                goal: "₹90,000"
+            },
+            // Duplicate for demonstration
+            {
+                image: "assets/images/donations/seniorcitizen.jpg",
+                title: "Support Education For Children",
+                author: "By Krishna Prasad",
+                raised: "₹80,050",
+                goal: "₹90,000"
+            },
+            {
+                image: "assets/images/donations/seniorcitizen.jpg",
+                title: "Medical Support Program",
+                author: "By Krishna Prasad",
+                raised: "₹80,050",
+                goal: "₹90,000"
+            }
+        ];
+
+        function createCard(data) {
+            const cardWidth = window.innerWidth < 768 ? '280px' : '350px';
+            const card = document.createElement('div');
+            card.style.cssText = `
+                flex: 0 0 ${cardWidth};
+                background: white;
+                border-radius: 10px;
+                padding: 20px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                margin-right: 20px;
+                box-sizing: border-box;
+            `;
+
+            card.innerHTML = `
+                <img src="${data.image}" alt="Donation" style="width: 100%; border-radius: 8px; margin-bottom: 15px;">
+                <h2 style="font-size: ${window.innerWidth < 768 ? '18px' : '20px'}; font-weight: bold; margin-bottom: 15px; color: #333;">${data.title}</h2>
+                <p style="font-size: 14px; color: #666; margin-bottom: 15px;">${data.author}</p>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 15px; font-size: 14px; color: #666;">
+                    <span>Raised ${data.raised}</span>
+                    <span>Goal ${data.goal}</span>
+                </div>
+                <div style="display: flex; gap: 10px; ${window.innerWidth < 768 ? 'flex-direction: column;' : ''}">
+                    <button style="padding: 10px 20px; border: 1px solid #2196f3; color: #2196f3; background: white; border-radius: 5px; cursor: pointer; ${window.innerWidth < 768 ? 'width: 100%;' : ''}">Share</button>
+                    <a href="donate.html" style="text-decoration: none; ${window.innerWidth < 768 ? 'width: 100%;' : 'margin-left: 80px;'}">
+                        <button style="padding: 10px 20px; background: #e91e63; color: white; border: none; border-radius: 5px; cursor: pointer; ${window.innerWidth < 768 ? 'width: 100%;' : ''}">Donate Now</button>
+                    </a>
+                </div>
+            `;
+            return card;
+        }
+
+        function initCarousel() {
+            const track = document.getElementById('carousel-track');
+            const cards = [];
+            
+            // Create initial and duplicate cards for infinite scroll
+            [...cardsData, ...cardsData].forEach(data => {
+                const card = createCard(data);
+                cards.push(card);
+                track.appendChild(card);
+            });
+
+            let currentIndex = 0;
+            const cardWidth = window.innerWidth < 768 ? 300 : 370; // card width + gap
+
+            function moveCarousel(direction) {
+                if (direction === 'next') {
+                    currentIndex++;
+                } else {
+                    currentIndex--;
+                }
+
+                // Reset position for infinite scroll
+                if (currentIndex >= cards.length / 2) {
+                    currentIndex = 0;
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(0)`;
+                    track.offsetHeight;
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                } else if (currentIndex < 0) {
+                    currentIndex = (cards.length / 2) - 1;
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+                    track.offsetHeight;
+                    track.style.transition = 'transform 0.5s ease-in-out';
+                }
+
+                track.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+            }
+
+            // Event Listeners
+            document.querySelector('.prev').addEventListener('click', () => moveCarousel('prev'));
+            document.querySelector('.next').addEventListener('click', () => moveCarousel('next'));
+
+            // Auto-scroll
+            const autoScrollInterval = setInterval(() => moveCarousel('next'), 3000);
+
+            // Responsive handling
+            window.addEventListener('resize', () => {
+                track.innerHTML = '';
+                initCarousel();
+            });
+
+            // Stop auto-scroll on mobile touch
+            track.addEventListener('touchstart', () => clearInterval(autoScrollInterval));
+        }
+
+        // Initialize carousel
+        initCarousel();
+    </script>
 </body>
 </html>
