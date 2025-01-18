@@ -103,6 +103,87 @@
             transform: rotate(180deg);
         }
 
+        .assurance-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .title span {
+            color: #e91e63;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            text-align: center;
+        }
+
+        .feature-item {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            background-color: #f5f5f5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .icon svg {
+            width: 32px;
+            height: 32px;
+            fill: #333;
+        }
+
+        .feature-text {
+            color: #333;
+            line-height: 1.5;
+            font-size: 0.9rem;
+        }
+
+        .view-details {
+            text-align: right;
+            margin-top: 2rem;
+        }
+
+        .view-details a {
+            color: #999;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+                margin-bottom: 2rem;
+            }
+
+            .feature-item {
+                padding: 1rem;
+            }
+        }
+
         /* For smaller screens, move the white box (containing info) slightly upwards */
         /* For smaller screens, move the white box (containing info) slightly upwards and to the left */
         /* For smaller screens, move the white box (containing info) slightly upwards and to the left */
@@ -1456,9 +1537,51 @@
 
         
 
-        <section class="we-assure">
-            <img src="./assets/images/we_asure.png" alt="we assure that" style="width:100%; margin-top: 80px;">
+        <section class="assurance-container">
+            <h3 class="sec-title__title" style="text-align: center; margin-bottom: 100px;"  >We assure <span class="sec-title__title__inner">you that</span></h3>
 
+            
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M23 12c0-3.037-1.232-5.789-3.222-7.778s-4.741-3.222-7.778-3.222-5.789 1.232-7.778 3.222-3.222 4.741-3.222 7.778 1.232 5.789 3.222 7.778 4.741 3.222 7.778 3.222 5.789-1.232 7.778-3.222 3.222-4.741 3.222-7.778zm-21 0c0-2.486 1.006-4.734 2.636-6.364s3.878-2.636 6.364-2.636 4.734 1.006 6.364 2.636 2.636 3.878 2.636 6.364-1.006 4.734-2.636 6.364-3.878 2.636-6.364 2.636-4.734-1.006-6.364-2.636-2.636-3.878-2.636-6.364zm7.192-3.021l-0.707 0.707 3.536 3.536-3.536 3.536 0.707 0.707 4.243-4.243-4.243-4.243z"></path>
+                        </svg>
+                    </div>
+                    <p class="feature-text">All Our Efforts Are Made Possible Only Because Of Your Efforts.</p>
+                </div>
+    
+                <div class="feature-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6z"/>
+                        </svg>
+                    </div>
+                    <p class="feature-text">All Donations Are Tax Deductible Under Section 80G Of Income Tax Act</p>
+                </div>
+    
+                <div class="feature-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zM9 6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9V6zm9 14H6V10h12v10zm-6-3c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/>
+                        </svg>
+                    </div>
+                    <p class="feature-text">Your Donation Transactions Are Completely Safe and Secure</p>
+                </div>
+    
+                <div class="feature-item">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V6h16v12zM4 0h16v2H4zm0 22h16v2H4zm8-10c1.38 0 2.5-1.12 2.5-2.5S13.38 7 12 7 9.5 8.12 9.5 9.5 10.62 12 12 12zm0-3.5c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm5 7.49C17 13.9 13.69 13 12 13s-5 .9-5 2.99V17h10v-1.01zm-8.19-.49c.61-.52 2.03-1 3.19-1 1.17 0 2.59.48 3.19 1H8.81z"/>
+                        </svg>
+                    </div>
+                    <p class="feature-text">100% transparency with photo proof and sponsor recognition</p>
+                </div>
+            </div>
+    
+            <div class="view-details">
+                <a href="#">View Details >></a>
+            </div>
         </section>
 
         <div class="client-carousel @@extraClassName" tyle=" margin-top: 0px;>
