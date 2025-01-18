@@ -8260,6 +8260,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .main-slider-one {
   position: relative;
   background-color: var(--cleenhearts-white, #fff);
+  margin-top: 30px;
 }
 .main-slider-one__wrapper {
   position: relative;
