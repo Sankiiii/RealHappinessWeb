@@ -6,7 +6,9 @@
     $('.gift-card__btn,.donate-page__form__amount__btn--amount').removeClass('active');
     $(this).addClass('active');
     var amount = $(this).find('.gift-card__btn__text, .donate-page__form__amount__btn__text').text();
-    $('.gift-card__form__input, .donate-page__form__amount__input').val('$' + amount);
+    $(".gift-card__form__input, .donate-page__form__amount__input").val(
+      "₹" + amount
+    );
   });
 
   /*-- Checkout Accoradin --*/
